@@ -27,5 +27,8 @@ if coches:
 else:
     print("La lista esta vacia")
 
+for barco in embarcaciones:
+    print("El tipo de barco es: ", barco)
+
 for barco in range(len(embarcaciones)):
     print("El tipo de barco es: ", embarcaciones[barco])
