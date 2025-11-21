@@ -1,0 +1,129 @@
+# --------- EJERCICIO 1 ---------
+# Lista inicial
+lista = [1, 2, 3, 2, 4, 5, 3, 6]
+
+duplicados = []
+unicos = []
+
+# Revisar elementos uno por uno
+for elemento in lista:
+    if elemento not in unicos:
+        unicos.append(elemento)
+    else:
+        duplicados.append(elemento)
+
+print("Elementos duplicados:", duplicados)
+print("Lista con elementos únicos:", unicos)
+
+# --------- EJERCICIO 2 ---------
+lista1 = [5, 1, 7]
+lista2 = [3, 8, 2]
+
+lista_unida = lista1 + lista2
+lista_unida.sort()
+
+print("Lista unida y ordenada:", lista_unida)
+
+# --------- EJERCICIO 3 ---------
+lista = [4, 10, 6, 1, 9]
+
+lista_ordenada = sorted(lista)
+segundo_mayor = lista_ordenada[-2]
+
+print("El segundo número más grande es:", segundo_mayor)
+
+# --------- EJERCICIO 4 ---------
+lista = [3, 8, 12, 5, 20, 7]
+
+numero = int(input("Ingresa un número: "))
+
+contador = 0
+for elemento in lista:
+    if elemento > numero:
+        contador += 1
+
+print("Cantidad de elementos mayores a", numero, ":", contador)
+
+# --------- EJERCICIO 5 ---------
+numero = int(input("Ingresa un número: "))
+
+lista = [10, 15, 20, 25, 30]
+
+suma = 0
+for elemento in lista:
+    if elemento % numero == 0:
+        suma += elemento
+
+print("La suma de los elementos divisibles por", numero, "es:", suma)
+
+# --------- EJERCICIO 6 ---------
+lista = [3, 10, 5, 22, 17, 8]
+
+numero = int(input("Ingresa un número: "))
+
+menores = []
+
+for elemento in lista:
+    if elemento < numero:
+        menores.append(elemento)
+
+if len(menores) == 0:
+    print("No hay números menores que", numero)
+else:
+    print("El número más alto menor que", numero, "es:", max(menores))
+
+# --------- EJERCICIO 7 ---------
+lista1 = [1, 2, 3, 4, 5]
+lista2 = [3, 5, 7, 9]
+
+comunes = []
+
+for elemento in lista1:
+    if elemento in lista2:
+        comunes.append(elemento)
+
+print("Elementos comunes:", comunes)
+
+# --------- EJERCICIO 8 ---------
+lista = [23, 65, 23]
+
+numero = int(input("Número a buscar en la lista: "))
+
+contador = 0
+
+for elemento in lista:
+    if elemento == numero:
+        contador += 1
+
+print("El número", numero, "aparece", contador, "veces.")
+
+# --------- EJERCICIO 9 ---------
+lista = [5, -3, 10, -1, 7, -9]
+
+positivos = []
+
+for num in lista:
+    if num > 0:
+        positivos.append(num)
+
+print("Lista de números positivos:", positivos)
+
+# --------- EJERCICIO 10 ---------
+lista_strings = ["Hola", "Wendy", "Python"]
+
+tamaños = []
+
+for palabra in lista_strings:
+    tamaños.append(len(palabra))
+
+print("Tamaño de cada string:", tamaños)
+
+# --------- EJERCICIO 11 ---------
+lista_strings = ["hola", "wendy", "python"]
+
+mayusculas = []
+
+for palabra in lista_strings:
+    mayusculas.append(palabra.upper())
+
+print("Lista en mayúsculas:", mayusculas)
